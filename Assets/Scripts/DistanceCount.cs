@@ -28,6 +28,6 @@ public class DistanceCount : MonoBehaviour {
     }
     void Distance_Count()
     {
-        this.DistanceText.text = "走行距離:" + (Mathf.Round(distance*10)/10)+"m";
+        this.DistanceText.text = "Distance:" + (Mathf.Round(distance*10)/10)+"m";
     }
 }

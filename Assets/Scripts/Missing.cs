@@ -27,6 +27,7 @@ public class Missing : MonoBehaviour
                     }
                     else
                     {
+                        Debug.Log(runner.getPose());
                         Miss();
                     }
                     break;

@@ -32,10 +32,6 @@ public class Runner : MonoBehaviour
            transform.position,
             transform.position - transform.up * GetComponent<SpriteRenderer>().bounds.size.y / 2,
             groundLayer);
-        if (isGround)
-        {
-            pos = POSE.RUNNING;
-        }
         if (isGround && Input.GetKey(KeyCode.UpArrow))
         {
             Jump();
@@ -44,19 +40,21 @@ public class Runner : MonoBehaviour
         {
             Slide();
         }
+        else
+        {
+            pos = POSE.RUNNING;
+        }
         Anim();
     }
     void Slide()
     {
         pos = POSE.SLIDING;
         anim.SetTrigger("Sliding");
-        isGround = false;
     }
     void Jump(){
         pos = POSE.JUMPPING;
         anim.SetTrigger("Jump");
         rb.AddForce(Vector2.up * jumpForce);
-        isGround = false;
     }
     void Anim()
     {
