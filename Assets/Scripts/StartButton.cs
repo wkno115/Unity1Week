@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour {
+    public GameControl gmc;
 	// Use this for initialization
 	void Start () {
 		
@@ -15,6 +16,6 @@ public class StartButton : MonoBehaviour {
 	}
     public void OnClick()
     {
-        SceneManager.LoadScene("Main");
+        gmc.setState(GameControl.STATE.GAME_START);  
     }
 }

@@ -15,6 +15,7 @@ public class GameControl : MonoBehaviour {
     }
     private STATE G_Status;
     public Canvas gameover;
+    public Canvas gameclear;
     public Runner runner;
 	// Use this for initialization
 	void Start () {
@@ -38,6 +39,7 @@ public class GameControl : MonoBehaviour {
                 GameOver();
                 break;
             case STATE.GAME_CLEAR:
+                GameClear();
                 SceneManager.LoadScene("GameClear");
                 break;
             case STATE.GAME_TITLE:
@@ -56,6 +58,11 @@ public class GameControl : MonoBehaviour {
     public void GameOver()
     {
         gameover.GetComponent<Canvas>().enabled = true;
+        Time.timeScale = 0f;
+    }
+    public void GameClear()
+    {
+        gameclear.GetComponent<Canvas>().enabled = true;
         Time.timeScale = 0f;
     }
 }

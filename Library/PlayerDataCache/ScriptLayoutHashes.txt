@@ -121,7 +121,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 697506883b0599eb631e272025c346f1 Assembly-CSharp.dll:.SpeedControl
 d3722eae54bace5eb6e4ba5501b56913 Assembly-CSharp.dll:.Create_Obstacles
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.EndButton
-deeaad47de6710604f17e0c72f2b63da Assembly-CSharp.dll:.GameControl
+2a5fe0c84ef4289b838739e79fb53630 Assembly-CSharp.dll:.GameControl
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
 05524b8f659e7bfe5756d1335fec24ba UnityEngine.Networking.dll:UnityEngine.Networking.NetworkBehaviour
 60b2bb652410a5867a5ab9a01cd38461 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkDiscovery
@@ -156,4 +156,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 7070aaf6ff8655c4d3e4975d51153ce3 Assembly-CSharp.dll:.Missing
 dc3e2e5ba343a4bfafa04259aaa6d301 Assembly-CSharp.dll:.DistanceCount
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.StartButton
+178ed798e01892a73dffcf03789450d9 Assembly-CSharp.dll:.StartButton

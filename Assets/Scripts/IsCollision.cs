@@ -11,17 +11,13 @@ public class IsCollision : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        touch = false;
 	}
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
             touch = true;
-        }
-        else
-        {
-            touch = false;
         }
     }
     public bool getTouch()

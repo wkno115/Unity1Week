@@ -40,10 +40,6 @@ public class Runner : MonoBehaviour
         {
             Slide();
         }
-        else
-        {
-            pos = POSE.RUNNING;
-        }
         Anim();
     }
     void Slide()
