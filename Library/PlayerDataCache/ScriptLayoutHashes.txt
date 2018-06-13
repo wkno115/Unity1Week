@@ -1,6 +1,6 @@
 WebGL
 PlayerPath?
-C:/Users/wkno/Documents/WebGL_Unity/Build
+C:/Users/naoto/Documents/unity_webgl/3MinRun
 SceneListBegin?
 Assets/Scenes/Title.unity
 Assets/Scenes/Main.unity

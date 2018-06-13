@@ -14,7 +14,7 @@ public class Runner : MonoBehaviour
     POSE pos;
     Rigidbody2D rb;
     Animator anim;
-    float jumpForce = 50;
+    float jumpForce=40;
     bool isGround;
     public LayerMask groundLayer; //地面のレイヤー
     // Use this for initialization
@@ -32,13 +32,19 @@ public class Runner : MonoBehaviour
            transform.position,
             transform.position - transform.up * GetComponent<SpriteRenderer>().bounds.size.y / 2,
             groundLayer);
-        if (isGround && Input.GetKey(KeyCode.UpArrow))
+        if (isGround ){
+            if (Input.GetKey(KeyCode.UpArrow))
+            {
+                Jump();
+            }
+            else if (Input.GetKey(KeyCode.DownArrow))
+            {
+                Slide();
+            }
+        }
+        if (pos == POSE.JUMPPING)
         {
             Jump();
-        }
-        if (isGround && Input.GetKey(KeyCode.DownArrow))
-        {
-            Slide();
         }
         Anim();
     }
